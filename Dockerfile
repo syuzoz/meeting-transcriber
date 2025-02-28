@@ -9,6 +9,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY transcribe.py /app/
 
-RUN chmod +x /app/transcribe.py
-
 ENTRYPOINT ["python", "/app/transcribe.py"]
